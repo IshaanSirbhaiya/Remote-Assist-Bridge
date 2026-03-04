@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Filter for RP2040/Arduino USB devices -->
+    <usb-device
+        vendor-id="11914"
+        product-id="10" />
+</resources>

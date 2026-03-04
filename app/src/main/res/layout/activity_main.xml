@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remote Assist Bridge"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tvUsbStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waiting for dongle..."
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: IDLE"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructions:\n1. Press START button\n2. Press CONFIRM to begin session\n3. Press STOP to end"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- TEST BUTTONS (REMOVE WHEN HARDWARE READY) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--- TEST MODE ---"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnTestStart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TEST: START"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnTestConfirm"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TEST: CONFIRM"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnTestStop"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TEST: STOP"/>
+
+</LinearLayout>
