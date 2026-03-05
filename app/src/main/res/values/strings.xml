@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Remote Assist Bridge</string>
+    <string name="accessibility_service_description">Required to automatically close TeamViewer when stop button is pressed</string>
+</resources>
