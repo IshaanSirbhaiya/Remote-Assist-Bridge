@@ -2,6 +2,26 @@
 
 A hardware + software solution that enables elderly or non-tech-savvy users to request remote technical assistance with the press of a physical button. An ESP32-based remote control communicates over BLE with an Android app that automatically launches a TeamViewer QuickSupport session.
 
+<p align="center">
+  <img src="docs/images/hero.jpg" alt="AGEnTECH — Because support should feel close" width="100%">
+</p>
+
+## From the Pitch Deck (AGEnTECH)
+
+This project was pitched as **AGEnTECH** — see the full deck: [`AGEnTECH_Pitch_Deck.pdf`](AGEnTECH_Pitch_Deck.pdf).
+
+<p align="center">
+  <img src="docs/images/solution.jpg" alt="Our solution: AGEnTECH" width="90%">
+</p>
+
+<p align="center">
+  <img src="docs/images/hardware.jpg" alt="AGEnTECH hardware — 3-button remote and companion app" width="90%">
+</p>
+
+<p align="center">
+  <img src="docs/images/design-process.jpg" alt="Design process — four hardware iterations and user testing" width="90%">
+</p>
+
 ## Overview
 
 The system consists of two main components:
