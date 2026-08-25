@@ -156,7 +156,7 @@ Active LOW — button press pulls pin to GND.
 
 | Parameter | Current Value | Location |
 |---|---|---|
-| Caregiver phone number | `+REDACTED_PHONE` | `MainActivity.kt` — `makePhoneCall()` |
+| Caregiver phone number | set via `caregiverPhone` in `local.properties` (gitignored) | `MainActivity.kt` — `makePhoneCall()` |
 | BLE device name | `RemoteAssistBridge` | `ble_cmd.cpp` — `ble_init()` |
 | BLE TX power | `ESP_PWR_LVL_P9` | `ble_cmd.cpp` — `ble_init()` |
 | Debounce interval | 50 ms | `buttons.h` — `DEBOUNCE_MS` |

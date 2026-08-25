@@ -1,0 +1,5 @@
+# Copy to local.properties (already gitignored) and fill in your values.
+# local.properties is never committed, so real values here stay local.
+
+# Caregiver phone number to dial when STOP/emergency is triggered.
+caregiverPhone=+10000000000

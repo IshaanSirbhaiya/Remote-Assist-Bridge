@@ -216,7 +216,11 @@ class MainActivity : AppCompatActivity() {
         splashtopController.stopSession()
     }
     private fun makePhoneCall() {
-        val parentNumber = "tel:+REDACTED_PHONE" // Load from config
+        if (BuildConfig.CAREGIVER_PHONE.isBlank()) {
+            Toast.makeText(this, "Caregiver phone not configured — set caregiverPhone in local.properties", Toast.LENGTH_LONG).show()
+            return
+        }
+        val parentNumber = "tel:${BuildConfig.CAREGIVER_PHONE}"
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
             == PackageManager.PERMISSION_GRANTED) {

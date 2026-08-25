@@ -582,7 +582,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun makePhoneCall() {
-        val parentNumber = "tel:+REDACTED_PHONE"
+        val parentNumber = "tel:${BuildConfig.CAREGIVER_PHONE}" // set caregiverPhone in local.properties
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
             == PackageManager.PERMISSION_GRANTED) {
             val callIntent = Intent(Intent.ACTION_CALL).apply {
@@ -1384,7 +1384,7 @@ The app has a single `Activity` with a vertical `LinearLayout`:
 | Connect Button Pin | GPIO 20 | `buttons.h` | `BTN_CONNECT` |
 | Confirm Button Pin | GPIO 21 | `buttons.h` | `BTN_CONFIRM` |
 | Stop Button Pin | GPIO 10 | `buttons.h` | `BTN_STOP` |
-| Caregiver Phone | `+REDACTED_PHONE` | `MainActivity.kt` | `makePhoneCall()` |
+| Caregiver Phone | set via `caregiverPhone` in `local.properties` (gitignored) | `MainActivity.kt` | `makePhoneCall()` |
 | TeamViewer Package | `com.teamviewer.quicksupport.market` | `SplashtopController.kt` | `teamviewerPackage` |
 | Close Button Coords | (780, 1331) | `RemoteAccessibilityService.kt` | `stopTeamViewer()` |
 | BLE Reconnect Delay | 2000 ms | `UsbService.kt` | `onConnectionStateChange()` |
@@ -1419,7 +1419,7 @@ The app has a single `Activity` with a vertical `LinearLayout`:
 10. MainActivity.onButtonPressed("START") runs on UI thread
 11. Calls handleStart():
     a. stateMachine.onStartPressed() → state = START_PRESSED
-    b. makePhoneCall() → Intent(ACTION_CALL, "tel:+REDACTED_PHONE")
+    b. makePhoneCall() → Intent(ACTION_CALL, "tel:<caregiverPhone from local.properties>")
 12. UI updates: "Status: START_PRESSED"
 ```
 
